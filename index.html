@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- nav bar -->
+    <ul class="nav">
+        <li>
+            <img src="assets/images/airflow.png" alt="airflow-icon">
+        </li>
+        <li id="airflow-text">Airflow</li>
+
+        <li>DAGs</li>
+        <li>Cluster Activity</li>
+        <li>Datasets</li>
+        <li>Security</li>
+        <li>Browse</li>
+        <li>Admin</li>
+        <li>Docs</li>
+
+        <li class="nav-right">14:17 UTC</li>
+        <li class="circle">AU</li>
+    </ul>
+    
+    <!-- heading -->
+    <section><h1>DAGs</h1></section>
+    
+    <!-- icons -->
+    <section></section>
+    
+    <!-- dag ui -->
+     <!-- dag ui -->
+<table>
+    <thead>
+        <tr>
+            <th>i</th>
+            <th>DAG</th>
+            <th>Owner</th>
+            <th>Runs</th>
+            <th>Schedule</th>
+            <th>Last Run</th>
+            <th>Next Run</th>
+            <th>Recent Tasks</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        <tr>
+            <td>
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+            </td>
+            <td>daily_sales_pipeline</td>
+            <td>data-team</td>
+            <td>1,284</td>
+            <td>0 2 * * *</td>
+            <td>Sep 5, 2026, 02:00</td>
+            <td>Sep 6, 2026, 02:00</td>
+            <td>● ● ● ● ●</td>
+            <td>▶ &nbsp; ⟳ &nbsp; ⋮</td>
+        </tr>
+
+        <tr>
+            <td>
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+            </td>
+            <td>etl_customer_data</td>
+            <td>analytics</td>
+            <td>936</td>
+            <td>0 */4 * * *</td>
+            <td>Sep 5, 2026, 04:00</td>
+            <td>Sep 5, 2026, 08:00</td>
+            <td>● ● ● ● ●</td>
+            <td>▶ &nbsp; ⟳ &nbsp; ⋮</td>
+        </tr>
+
+        <tr>
+            <td>
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+            </td>
+            <td>warehouse_refresh</td>
+            <td>platform</td>
+            <td>2,417</td>
+            <td>30 * * * *</td>
+            <td>Sep 5, 2026, 07:30</td>
+            <td>Sep 5, 2026, 08:30</td>
+            <td>● ● ● ● ●</td>
+            <td>▶ &nbsp; ⟳ &nbsp; ⋮</td>
+        </tr>
+
+        <tr>
+            <td>
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+            </td>
+            <td>marketing_reports</td>
+            <td>marketing</td>
+            <td>412</td>
+            <td>0 6 * * 1-5</td>
+            <td>Sep 4, 2026, 06:00</td>
+            <td>Sep 7, 2026, 06:00</td>
+            <td>● ● ● ● ●</td>
+            <td>▶ &nbsp; ⟳ &nbsp; ⋮</td>
+        </tr>
+
+        <tr>
+            <td>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </td>
+            <td>legacy_orders_export</td>
+            <td>operations</td>
+            <td>87</td>
+            <td>0 0 * * *</td>
+            <td>Sep 4, 2026, 00:00</td>
+            <td>None</td>
+            <td>● ● ● ● ●</td>
+            <td>▶ &nbsp; ⟳ &nbsp; ⋮</td>
+        </tr>
+
+        <tr>
+            <td>
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+            </td>
+            <td>inventory_sync</td>
+            <td>supply-chain</td>
+            <td>3,842</td>
+            <td>*/15 * * * *</td>
+            <td>Sep 5, 2026, 07:30</td>
+            <td>Sep 5, 2026, 07:45</td>
+            <td>● ● ● ● ●</td>
+            <td>▶ &nbsp; ⟳ &nbsp; ⋮</td>
+        </tr>
+
+        <tr>
+            <td>
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+            </td>
+            <td>db_backup</td>
+            <td>infra</td>
+            <td>691</td>
+            <td>0 3 * * *</td>
+            <td>Sep 5, 2026, 03:00</td>
+            <td>Sep 6, 2026, 03:00</td>
+            <td>● ● ● ● ●</td>
+            <td>▶ &nbsp; ⟳ &nbsp; ⋮</td>
+        </tr>
+
+        <tr>
+            <td>
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+            </td>
+            <td>user_activity_hourly</td>
+            <td>product-analytics</td>
+            <td>8,106</td>
+            <td>0 * * * *</td>
+            <td>Sep 5, 2026, 07:00</td>
+            <td>Sep 5, 2026, 08:00</td>
+            <td>● ● ● ● ●</td>
+            <td>▶ &nbsp; ⟳ &nbsp; ⋮</td>
+        </tr>
+
+        <tr>
+            <td>
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+            </td>
+            <td>finance_reconciliation</td>
+            <td>finance</td>
+            <td>273</td>
+            <td>0 5 * * 1-5</td>
+            <td>Sep 4, 2026, 05:00</td>
+            <td>Sep 7, 2026, 05:00</td>
+            <td>● ● ● ● ●</td>
+            <td>▶ &nbsp; ⟳ &nbsp; ⋮</td>
+        </tr>
+
+        <tr>
+            <td>
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+            </td>
+            <td>product_catalog_update</td>
+            <td>catalog</td>
+            <td>1,095</td>
+            <td>0 1 * * *</td>
+            <td>Sep 5, 2026, 01:00</td>
+            <td>Sep 6, 2026, 01:00</td>
+            <td>● ● ● ● ●</td>
+            <td>▶ &nbsp; ⟳ &nbsp; ⋮</td>
+        </tr>
+
+        <tr>
+            <td>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </td>
+            <td>ml_feature_pipeline</td>
+            <td>ml-platform</td>
+            <td>156</td>
+            <td>0 12 * * *</td>
+            <td>Sep 4, 2026, 12:00</td>
+            <td>None</td>
+            <td>● ● ● ● ●</td>
+            <td>▶ &nbsp; ⟳ &nbsp; ⋮</td>
+        </tr>
+
+        <tr>
+            <td>
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+            </td>
+            <td>notifications_dispatch</td>
+            <td>backend</td>
+            <td>14,291</td>
+            <td>*/5 * * * *</td>
+            <td>Sep 5, 2026, 07:35</td>
+            <td>Sep 5, 2026, 07:40</td>
+            <td>● ● ● ● ●</td>
+            <td>▶ &nbsp; ⟳ &nbsp; ⋮</td>
+        </tr>
+
+        <tr>
+            <td>
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+            </td>
+            <td>ad_impressions_daily</td>
+            <td>ad-platform</td>
+            <td>728</td>
+            <td>15 4 * * *</td>
+            <td>Sep 5, 2026, 04:15</td>
+            <td>Sep 6, 2026, 04:15</td>
+            <td>● ● ● ● ●</td>
+            <td>▶ &nbsp; ⟳ &nbsp; ⋮</td>
+        </tr>
+
+        <tr>
+            <td>
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+            </td>
+            <td>data_quality_checks</td>
+            <td>data-platform</td>
+            <td>5,621</td>
+            <td>*/30 * * * *</td>
+            <td>Sep 5, 2026, 07:30</td>
+            <td>Sep 5, 2026, 08:00</td>
+            <td>● ● ● ● ●</td>
+            <td>▶ &nbsp; ⟳ &nbsp; ⋮</td>
+        </tr>
+
+        <tr>
+            <td>
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+            </td>
+            <td>weekly_kpi_report</td>
+            <td>business-intelligence</td>
+            <td>184</td>
+            <td>0 8 * * 1</td>
+            <td>Aug 31, 2026, 08:00</td>
+            <td>Sep 7, 2026, 08:00</td>
+            <td>● ● ● ● ●</td>
+            <td>▶ &nbsp; ⟳ &nbsp; ⋮</td>
+        </tr>
+
+    </tbody>
+</table>
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
