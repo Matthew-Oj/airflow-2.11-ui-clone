@@ -15,7 +15,6 @@ A lightweight frontend clone inspired by the Apache Airflow 2.11.2 web UI.
 
 - HTML
 - CSS
-- JavaScript
 
 ## Run
 
